@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD47EE23141B5AC7009040A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD47EE22141B5AC7009040A3 /* AVFoundation.framework */; };
+		CD47EE26141B5ACD009040A3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD47EE25141B5ACD009040A3 /* GameKit.framework */; };
+		CDE5B982141B53CA0033DA37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE5B981141B53CA0033DA37 /* UIKit.framework */; };
+		CDE5B984141B53CA0033DA37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE5B983141B53CA0033DA37 /* Foundation.framework */; };
+		CDE5B986141B53CA0033DA37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE5B985141B53CA0033DA37 /* CoreGraphics.framework */; };
+		CDE5B98C141B53CA0033DA37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B98A141B53CA0033DA37 /* InfoPlist.strings */; };
+		CDE5B98F141B53CA0033DA37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B98E141B53CA0033DA37 /* main.m */; };
+		CDE5B992141B53CA0033DA37 /* BTJoypadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B991141B53CA0033DA37 /* BTJoypadAppDelegate.m */; };
+		CDE5B996141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B995141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.m */; };
+		CDE5B999141B53CA0033DA37 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B997141B53CA0033DA37 /* MainWindow_iPhone.xib */; };
+		CDE5B99D141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B99C141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.m */; };
+		CDE5B9A0141B53CA0033DA37 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B99E141B53CA0033DA37 /* MainWindow_iPad.xib */; };
+		CDE5B9BB141B56980033DA37 /* BTJoypadViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9B9141B56980033DA37 /* BTJoypadViewController_iPad.m */; };
+		CDE5B9C0141B57530033DA37 /* BTJoypadViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9BE141B57530033DA37 /* BTJoypadViewController_iPhone.m */; };
+		CDE5B9C2141B57640033DA37 /* BTJoypadViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9C4141B57640033DA37 /* BTJoypadViewController_iPhone.xib */; };
+		CDE5B9C5141B57690033DA37 /* BTJoypadViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9C7141B57690033DA37 /* BTJoypadViewController_iPad.xib */; };
+		CDE5B9DE141B58470033DA37 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9D3141B58470033DA37 /* NSObject+SBJSON.m */; };
+		CDE5B9DF141B58470033DA37 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9D5141B58470033DA37 /* NSString+SBJSON.m */; };
+		CDE5B9E0141B58470033DA37 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9D7141B58470033DA37 /* SBJSON.m */; };
+		CDE5B9E1141B58470033DA37 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9D9141B58470033DA37 /* SBJsonBase.m */; };
+		CDE5B9E2141B58470033DA37 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9DB141B58470033DA37 /* SBJsonParser.m */; };
+		CDE5B9E3141B58470033DA37 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5B9DD141B58470033DA37 /* SBJsonWriter.m */; };
+		CDE5BA02141B58570033DA37 /* BadaBoom BB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9E5141B58560033DA37 /* BadaBoom BB.TTF */; };
+		CDE5BA03141B58570033DA37 /* asteroid_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9E7141B58570033DA37 /* asteroid_1.png */; };
+		CDE5BA04141B58570033DA37 /* asteroid_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9E8141B58570033DA37 /* asteroid_2.png */; };
+		CDE5BA05141B58570033DA37 /* asteroid_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9E9141B58570033DA37 /* asteroid_3.png */; };
+		CDE5BA06141B58570033DA37 /* asteroid_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9EA141B58570033DA37 /* asteroid_4.png */; };
+		CDE5BA07141B58570033DA37 /* asteroid_5.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9EB141B58570033DA37 /* asteroid_5.png */; };
+		CDE5BA08141B58570033DA37 /* btn_base.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9EC141B58570033DA37 /* btn_base.png */; };
+		CDE5BA09141B58570033DA37 /* button_a.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9ED141B58570033DA37 /* button_a.png */; };
+		CDE5BA0A141B58570033DA37 /* button_a_ori.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9EE141B58570033DA37 /* button_a_ori.png */; };
+		CDE5BA0B141B58570033DA37 /* button_a_temp.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9EF141B58570033DA37 /* button_a_temp.png */; };
+		CDE5BA0C141B58570033DA37 /* button_b_ori.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F0141B58570033DA37 /* button_b_ori.png */; };
+		CDE5BA0D141B58570033DA37 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F1141B58570033DA37 /* explosion.png */; };
+		CDE5BA0E141B58570033DA37 /* explosion2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F2141B58570033DA37 /* explosion2.jpg */; };
+		CDE5BA0F141B58570033DA37 /* explosion3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F3141B58570033DA37 /* explosion3.png */; };
+		CDE5BA10141B58570033DA37 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F4141B58570033DA37 /* Icon.png */; };
+		CDE5BA11141B58570033DA37 /* image038.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F5141B58570033DA37 /* image038.jpg */; };
+		CDE5BA12141B58570033DA37 /* laser_beam.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F6141B58570033DA37 /* laser_beam.png */; };
+		CDE5BA13141B58570033DA37 /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F7141B58570033DA37 /* plane.jpg */; };
+		CDE5BA14141B58570033DA37 /* plane1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F8141B58570033DA37 /* plane1.png */; };
+		CDE5BA15141B58570033DA37 /* plane2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9F9141B58570033DA37 /* plane2.png */; };
+		CDE5BA16141B58570033DA37 /* red_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9FA141B58570033DA37 /* red_btn.png */; };
+		CDE5BA17141B58570033DA37 /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9FB141B58570033DA37 /* rocket.png */; };
+		CDE5BA18141B58570033DA37 /* space-sprites-09-space-ship.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9FC141B58570033DA37 /* space-sprites-09-space-ship.gif */; };
+		CDE5BA19141B58570033DA37 /* Spaceship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9FD141B58570033DA37 /* Spaceship.jpg */; };
+		CDE5BA1A141B58570033DA37 /* starfield.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE5B9FE141B58570033DA37 /* starfield.png */; };
+		CDE5BA1B141B58570033DA37 /* blaster.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDE5BA00141B58570033DA37 /* blaster.wav */; };
+		CDE5BA1C141B58570033DA37 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDE5BA01141B58570033DA37 /* explosion.wav */; };
+		CDE5BA1F141B59480033DA37 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5BA1E141B59470033DA37 /* CustomLabel.m */; };
+		CDE5BA23141B595B0033DA37 /* AsteroidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5BA21141B595B0033DA37 /* AsteroidViewController.m */; };
+		CDE5BA24141B595B0033DA37 /* AsteroidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5BA22141B595B0033DA37 /* AsteroidViewController.xib */; };
+		CDE5BA2E141B59680033DA37 /* LaserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5BA26141B59670033DA37 /* LaserViewController.m */; };
+		CDE5BA2F141B59680033DA37 /* LaserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5BA27141B59670033DA37 /* LaserViewController.xib */; };
+		CDE5BA30141B59680033DA37 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5BA29141B59670033DA37 /* PlayerViewController.m */; };
+		CDE5BA31141B59680033DA37 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5BA2A141B59680033DA37 /* PlayerViewController.xib */; };
+		CDE5BA32141B59680033DA37 /* RocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5BA2C141B59680033DA37 /* RocketViewController.m */; };
+		CDE5BA33141B59680033DA37 /* RocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE5BA2D141B59680033DA37 /* RocketViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD47EE22141B5AC7009040A3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD47EE25141B5ACD009040A3 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		CDE5B97D141B53CA0033DA37 /* BTJoypad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTJoypad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE5B981141B53CA0033DA37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDE5B983141B53CA0033DA37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDE5B985141B53CA0033DA37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDE5B989141B53CA0033DA37 /* BTJoypad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTJoypad-Info.plist"; sourceTree = "<group>"; };
+		CDE5B98B141B53CA0033DA37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDE5B98D141B53CA0033DA37 /* BTJoypad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTJoypad-Prefix.pch"; sourceTree = "<group>"; };
+		CDE5B98E141B53CA0033DA37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDE5B990141B53CA0033DA37 /* BTJoypadAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTJoypadAppDelegate.h; sourceTree = "<group>"; };
+		CDE5B991141B53CA0033DA37 /* BTJoypadAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTJoypadAppDelegate.m; sourceTree = "<group>"; };
+		CDE5B994141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BTJoypadAppDelegate_iPhone.h; path = iPhone/BTJoypadAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		CDE5B995141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BTJoypadAppDelegate_iPhone.m; path = iPhone/BTJoypadAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		CDE5B998141B53CA0033DA37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		CDE5B99B141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BTJoypadAppDelegate_iPad.h; path = iPad/BTJoypadAppDelegate_iPad.h; sourceTree = "<group>"; };
+		CDE5B99C141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BTJoypadAppDelegate_iPad.m; path = iPad/BTJoypadAppDelegate_iPad.m; sourceTree = "<group>"; };
+		CDE5B99F141B53CA0033DA37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		CDE5B9B8141B56980033DA37 /* BTJoypadViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTJoypadViewController_iPad.h; path = iPad/BTJoypadViewController_iPad.h; sourceTree = "<group>"; };
+		CDE5B9B9141B56980033DA37 /* BTJoypadViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTJoypadViewController_iPad.m; path = iPad/BTJoypadViewController_iPad.m; sourceTree = "<group>"; };
+		CDE5B9BD141B57530033DA37 /* BTJoypadViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTJoypadViewController_iPhone.h; path = iPhone/BTJoypadViewController_iPhone.h; sourceTree = "<group>"; };
+		CDE5B9BE141B57530033DA37 /* BTJoypadViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTJoypadViewController_iPhone.m; path = iPhone/BTJoypadViewController_iPhone.m; sourceTree = "<group>"; };
+		CDE5B9C3141B57640033DA37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BTJoypadViewController_iPhone.xib; sourceTree = "<group>"; };
+		CDE5B9C6141B57690033DA37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BTJoypadViewController_iPad.xib; sourceTree = "<group>"; };
+		CDE5B9D1141B58470033DA37 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		CDE5B9D2141B58470033DA37 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		CDE5B9D3141B58470033DA37 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		CDE5B9D4141B58470033DA37 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		CDE5B9D5141B58470033DA37 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		CDE5B9D6141B58470033DA37 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		CDE5B9D7141B58470033DA37 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		CDE5B9D8141B58470033DA37 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		CDE5B9D9141B58470033DA37 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		CDE5B9DA141B58470033DA37 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		CDE5B9DB141B58470033DA37 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		CDE5B9DC141B58470033DA37 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		CDE5B9DD141B58470033DA37 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		CDE5B9E5141B58560033DA37 /* BadaBoom BB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BadaBoom BB.TTF"; sourceTree = "<group>"; };
+		CDE5B9E7141B58570033DA37 /* asteroid_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_1.png; sourceTree = "<group>"; };
+		CDE5B9E8141B58570033DA37 /* asteroid_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_2.png; sourceTree = "<group>"; };
+		CDE5B9E9141B58570033DA37 /* asteroid_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_3.png; sourceTree = "<group>"; };
+		CDE5B9EA141B58570033DA37 /* asteroid_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_4.png; sourceTree = "<group>"; };
+		CDE5B9EB141B58570033DA37 /* asteroid_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_5.png; sourceTree = "<group>"; };
+		CDE5B9EC141B58570033DA37 /* btn_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_base.png; sourceTree = "<group>"; };
+		CDE5B9ED141B58570033DA37 /* button_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_a.png; sourceTree = "<group>"; };
+		CDE5B9EE141B58570033DA37 /* button_a_ori.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_a_ori.png; sourceTree = "<group>"; };
+		CDE5B9EF141B58570033DA37 /* button_a_temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_a_temp.png; sourceTree = "<group>"; };
+		CDE5B9F0141B58570033DA37 /* button_b_ori.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_b_ori.png; sourceTree = "<group>"; };
+		CDE5B9F1141B58570033DA37 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
+		CDE5B9F2141B58570033DA37 /* explosion2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = explosion2.jpg; sourceTree = "<group>"; };
+		CDE5B9F3141B58570033DA37 /* explosion3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion3.png; sourceTree = "<group>"; };
+		CDE5B9F4141B58570033DA37 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CDE5B9F5141B58570033DA37 /* image038.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image038.jpg; sourceTree = "<group>"; };
+		CDE5B9F6141B58570033DA37 /* laser_beam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser_beam.png; sourceTree = "<group>"; };
+		CDE5B9F7141B58570033DA37 /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = "<group>"; };
+		CDE5B9F8141B58570033DA37 /* plane1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane1.png; sourceTree = "<group>"; };
+		CDE5B9F9141B58570033DA37 /* plane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane2.png; sourceTree = "<group>"; };
+		CDE5B9FA141B58570033DA37 /* red_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_btn.png; sourceTree = "<group>"; };
+		CDE5B9FB141B58570033DA37 /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
+		CDE5B9FC141B58570033DA37 /* space-sprites-09-space-ship.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "space-sprites-09-space-ship.gif"; sourceTree = "<group>"; };
+		CDE5B9FD141B58570033DA37 /* Spaceship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spaceship.jpg; sourceTree = "<group>"; };
+		CDE5B9FE141B58570033DA37 /* starfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starfield.png; sourceTree = "<group>"; };
+		CDE5BA00141B58570033DA37 /* blaster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blaster.wav; sourceTree = "<group>"; };
+		CDE5BA01141B58570033DA37 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		CDE5BA1D141B59470033DA37 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		CDE5BA1E141B59470033DA37 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
+		CDE5BA20141B595B0033DA37 /* AsteroidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsteroidViewController.h; path = iPad/AsteroidViewController.h; sourceTree = "<group>"; };
+		CDE5BA21141B595B0033DA37 /* AsteroidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsteroidViewController.m; path = iPad/AsteroidViewController.m; sourceTree = "<group>"; };
+		CDE5BA22141B595B0033DA37 /* AsteroidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AsteroidViewController.xib; path = iPad/AsteroidViewController.xib; sourceTree = "<group>"; };
+		CDE5BA25141B59670033DA37 /* LaserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaserViewController.h; path = iPad/LaserViewController.h; sourceTree = "<group>"; };
+		CDE5BA26141B59670033DA37 /* LaserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaserViewController.m; path = iPad/LaserViewController.m; sourceTree = "<group>"; };
+		CDE5BA27141B59670033DA37 /* LaserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaserViewController.xib; path = iPad/LaserViewController.xib; sourceTree = "<group>"; };
+		CDE5BA28141B59670033DA37 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerViewController.h; path = iPad/PlayerViewController.h; sourceTree = "<group>"; };
+		CDE5BA29141B59670033DA37 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerViewController.m; path = iPad/PlayerViewController.m; sourceTree = "<group>"; };
+		CDE5BA2A141B59680033DA37 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = iPad/PlayerViewController.xib; sourceTree = "<group>"; };
+		CDE5BA2B141B59680033DA37 /* RocketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RocketViewController.h; path = iPad/RocketViewController.h; sourceTree = "<group>"; };
+		CDE5BA2C141B59680033DA37 /* RocketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RocketViewController.m; path = iPad/RocketViewController.m; sourceTree = "<group>"; };
+		CDE5BA2D141B59680033DA37 /* RocketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RocketViewController.xib; path = iPad/RocketViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE5B97A141B53CA0033DA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD47EE26141B5ACD009040A3 /* GameKit.framework in Frameworks */,
+				CD47EE23141B5AC7009040A3 /* AVFoundation.framework in Frameworks */,
+				CDE5B982141B53CA0033DA37 /* UIKit.framework in Frameworks */,
+				CDE5B984141B53CA0033DA37 /* Foundation.framework in Frameworks */,
+				CDE5B986141B53CA0033DA37 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDE5B972141B53CA0033DA37 = {
+			isa = PBXGroup;
+			children = (
+				CDE5B9D0141B58460033DA37 /* JSON */,
+				CDE5B987141B53CA0033DA37 /* BTJoypad */,
+				CDE5B980141B53CA0033DA37 /* Frameworks */,
+				CDE5B97E141B53CA0033DA37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE5B97E141B53CA0033DA37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B97D141B53CA0033DA37 /* BTJoypad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE5B980141B53CA0033DA37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD47EE25141B5ACD009040A3 /* GameKit.framework */,
+				CD47EE22141B5AC7009040A3 /* AVFoundation.framework */,
+				CDE5B981141B53CA0033DA37 /* UIKit.framework */,
+				CDE5B983141B53CA0033DA37 /* Foundation.framework */,
+				CDE5B985141B53CA0033DA37 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE5B987141B53CA0033DA37 /* BTJoypad */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B9E4141B58560033DA37 /* fonts */,
+				CDE5B9E6141B58560033DA37 /* images */,
+				CDE5B9FF141B58570033DA37 /* sfx */,
+				CDE5BA1D141B59470033DA37 /* CustomLabel.h */,
+				CDE5BA1E141B59470033DA37 /* CustomLabel.m */,
+				CDE5B990141B53CA0033DA37 /* BTJoypadAppDelegate.h */,
+				CDE5B991141B53CA0033DA37 /* BTJoypadAppDelegate.m */,
+				CDE5B993141B53CA0033DA37 /* iPhone */,
+				CDE5B99A141B53CA0033DA37 /* iPad */,
+				CDE5B988141B53CA0033DA37 /* Supporting Files */,
+			);
+			path = BTJoypad;
+			sourceTree = "<group>";
+		};
+		CDE5B988141B53CA0033DA37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B989141B53CA0033DA37 /* BTJoypad-Info.plist */,
+				CDE5B98A141B53CA0033DA37 /* InfoPlist.strings */,
+				CDE5B98D141B53CA0033DA37 /* BTJoypad-Prefix.pch */,
+				CDE5B98E141B53CA0033DA37 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE5B993141B53CA0033DA37 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B994141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.h */,
+				CDE5B995141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.m */,
+				CDE5B997141B53CA0033DA37 /* MainWindow_iPhone.xib */,
+				CDE5B9BD141B57530033DA37 /* BTJoypadViewController_iPhone.h */,
+				CDE5B9BE141B57530033DA37 /* BTJoypadViewController_iPhone.m */,
+				CDE5B9C4141B57640033DA37 /* BTJoypadViewController_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		CDE5B99A141B53CA0033DA37 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B99B141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.h */,
+				CDE5B99C141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.m */,
+				CDE5B99E141B53CA0033DA37 /* MainWindow_iPad.xib */,
+				CDE5B9B8141B56980033DA37 /* BTJoypadViewController_iPad.h */,
+				CDE5B9B9141B56980033DA37 /* BTJoypadViewController_iPad.m */,
+				CDE5B9C7141B57690033DA37 /* BTJoypadViewController_iPad.xib */,
+				CDE5BA28141B59670033DA37 /* PlayerViewController.h */,
+				CDE5BA29141B59670033DA37 /* PlayerViewController.m */,
+				CDE5BA2A141B59680033DA37 /* PlayerViewController.xib */,
+				CDE5BA25141B59670033DA37 /* LaserViewController.h */,
+				CDE5BA26141B59670033DA37 /* LaserViewController.m */,
+				CDE5BA27141B59670033DA37 /* LaserViewController.xib */,
+				CDE5BA2B141B59680033DA37 /* RocketViewController.h */,
+				CDE5BA2C141B59680033DA37 /* RocketViewController.m */,
+				CDE5BA2D141B59680033DA37 /* RocketViewController.xib */,
+				CDE5BA20141B595B0033DA37 /* AsteroidViewController.h */,
+				CDE5BA21141B595B0033DA37 /* AsteroidViewController.m */,
+				CDE5BA22141B595B0033DA37 /* AsteroidViewController.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		CDE5B9D0141B58460033DA37 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B9D1141B58470033DA37 /* JSON.h */,
+				CDE5B9D2141B58470033DA37 /* NSObject+SBJSON.h */,
+				CDE5B9D3141B58470033DA37 /* NSObject+SBJSON.m */,
+				CDE5B9D4141B58470033DA37 /* NSString+SBJSON.h */,
+				CDE5B9D5141B58470033DA37 /* NSString+SBJSON.m */,
+				CDE5B9D6141B58470033DA37 /* SBJSON.h */,
+				CDE5B9D7141B58470033DA37 /* SBJSON.m */,
+				CDE5B9D8141B58470033DA37 /* SBJsonBase.h */,
+				CDE5B9D9141B58470033DA37 /* SBJsonBase.m */,
+				CDE5B9DA141B58470033DA37 /* SBJsonParser.h */,
+				CDE5B9DB141B58470033DA37 /* SBJsonParser.m */,
+				CDE5B9DC141B58470033DA37 /* SBJsonWriter.h */,
+				CDE5B9DD141B58470033DA37 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		CDE5B9E4141B58560033DA37 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B9E5141B58560033DA37 /* BadaBoom BB.TTF */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		CDE5B9E6141B58560033DA37 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5B9E7141B58570033DA37 /* asteroid_1.png */,
+				CDE5B9E8141B58570033DA37 /* asteroid_2.png */,
+				CDE5B9E9141B58570033DA37 /* asteroid_3.png */,
+				CDE5B9EA141B58570033DA37 /* asteroid_4.png */,
+				CDE5B9EB141B58570033DA37 /* asteroid_5.png */,
+				CDE5B9EC141B58570033DA37 /* btn_base.png */,
+				CDE5B9ED141B58570033DA37 /* button_a.png */,
+				CDE5B9EE141B58570033DA37 /* button_a_ori.png */,
+				CDE5B9EF141B58570033DA37 /* button_a_temp.png */,
+				CDE5B9F0141B58570033DA37 /* button_b_ori.png */,
+				CDE5B9F1141B58570033DA37 /* explosion.png */,
+				CDE5B9F2141B58570033DA37 /* explosion2.jpg */,
+				CDE5B9F3141B58570033DA37 /* explosion3.png */,
+				CDE5B9F4141B58570033DA37 /* Icon.png */,
+				CDE5B9F5141B58570033DA37 /* image038.jpg */,
+				CDE5B9F6141B58570033DA37 /* laser_beam.png */,
+				CDE5B9F7141B58570033DA37 /* plane.jpg */,
+				CDE5B9F8141B58570033DA37 /* plane1.png */,
+				CDE5B9F9141B58570033DA37 /* plane2.png */,
+				CDE5B9FA141B58570033DA37 /* red_btn.png */,
+				CDE5B9FB141B58570033DA37 /* rocket.png */,
+				CDE5B9FC141B58570033DA37 /* space-sprites-09-space-ship.gif */,
+				CDE5B9FD141B58570033DA37 /* Spaceship.jpg */,
+				CDE5B9FE141B58570033DA37 /* starfield.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CDE5B9FF141B58570033DA37 /* sfx */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5BA00141B58570033DA37 /* blaster.wav */,
+				CDE5BA01141B58570033DA37 /* explosion.wav */,
+			);
+			path = sfx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE5B97C141B53CA0033DA37 /* BTJoypad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE5B9A3141B53CA0033DA37 /* Build configuration list for PBXNativeTarget "BTJoypad" */;
+			buildPhases = (
+				CDE5B979141B53CA0033DA37 /* Sources */,
+				CDE5B97A141B53CA0033DA37 /* Frameworks */,
+				CDE5B97B141B53CA0033DA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTJoypad;
+			productName = BTJoypad;
+			productReference = CDE5B97D141B53CA0033DA37 /* BTJoypad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE5B974141B53CA0033DA37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = CDE5B977141B53CA0033DA37 /* Build configuration list for PBXProject "BTJoypad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDE5B972141B53CA0033DA37;
+			productRefGroup = CDE5B97E141B53CA0033DA37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE5B97C141B53CA0033DA37 /* BTJoypad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE5B97B141B53CA0033DA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE5B98C141B53CA0033DA37 /* InfoPlist.strings in Resources */,
+				CDE5B999141B53CA0033DA37 /* MainWindow_iPhone.xib in Resources */,
+				CDE5B9A0141B53CA0033DA37 /* MainWindow_iPad.xib in Resources */,
+				CDE5B9C5141B57690033DA37 /* BTJoypadViewController_iPad.xib in Resources */,
+				CDE5B9C2141B57640033DA37 /* BTJoypadViewController_iPhone.xib in Resources */,
+				CDE5BA02141B58570033DA37 /* BadaBoom BB.TTF in Resources */,
+				CDE5BA03141B58570033DA37 /* asteroid_1.png in Resources */,
+				CDE5BA04141B58570033DA37 /* asteroid_2.png in Resources */,
+				CDE5BA05141B58570033DA37 /* asteroid_3.png in Resources */,
+				CDE5BA06141B58570033DA37 /* asteroid_4.png in Resources */,
+				CDE5BA07141B58570033DA37 /* asteroid_5.png in Resources */,
+				CDE5BA08141B58570033DA37 /* btn_base.png in Resources */,
+				CDE5BA09141B58570033DA37 /* button_a.png in Resources */,
+				CDE5BA0A141B58570033DA37 /* button_a_ori.png in Resources */,
+				CDE5BA0B141B58570033DA37 /* button_a_temp.png in Resources */,
+				CDE5BA0C141B58570033DA37 /* button_b_ori.png in Resources */,
+				CDE5BA0D141B58570033DA37 /* explosion.png in Resources */,
+				CDE5BA0E141B58570033DA37 /* explosion2.jpg in Resources */,
+				CDE5BA0F141B58570033DA37 /* explosion3.png in Resources */,
+				CDE5BA10141B58570033DA37 /* Icon.png in Resources */,
+				CDE5BA11141B58570033DA37 /* image038.jpg in Resources */,
+				CDE5BA12141B58570033DA37 /* laser_beam.png in Resources */,
+				CDE5BA13141B58570033DA37 /* plane.jpg in Resources */,
+				CDE5BA14141B58570033DA37 /* plane1.png in Resources */,
+				CDE5BA15141B58570033DA37 /* plane2.png in Resources */,
+				CDE5BA16141B58570033DA37 /* red_btn.png in Resources */,
+				CDE5BA17141B58570033DA37 /* rocket.png in Resources */,
+				CDE5BA18141B58570033DA37 /* space-sprites-09-space-ship.gif in Resources */,
+				CDE5BA19141B58570033DA37 /* Spaceship.jpg in Resources */,
+				CDE5BA1A141B58570033DA37 /* starfield.png in Resources */,
+				CDE5BA1B141B58570033DA37 /* blaster.wav in Resources */,
+				CDE5BA1C141B58570033DA37 /* explosion.wav in Resources */,
+				CDE5BA24141B595B0033DA37 /* AsteroidViewController.xib in Resources */,
+				CDE5BA2F141B59680033DA37 /* LaserViewController.xib in Resources */,
+				CDE5BA31141B59680033DA37 /* PlayerViewController.xib in Resources */,
+				CDE5BA33141B59680033DA37 /* RocketViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE5B979141B53CA0033DA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE5B98F141B53CA0033DA37 /* main.m in Sources */,
+				CDE5B992141B53CA0033DA37 /* BTJoypadAppDelegate.m in Sources */,
+				CDE5B996141B53CA0033DA37 /* BTJoypadAppDelegate_iPhone.m in Sources */,
+				CDE5B99D141B53CA0033DA37 /* BTJoypadAppDelegate_iPad.m in Sources */,
+				CDE5B9BB141B56980033DA37 /* BTJoypadViewController_iPad.m in Sources */,
+				CDE5B9C0141B57530033DA37 /* BTJoypadViewController_iPhone.m in Sources */,
+				CDE5B9DE141B58470033DA37 /* NSObject+SBJSON.m in Sources */,
+				CDE5B9DF141B58470033DA37 /* NSString+SBJSON.m in Sources */,
+				CDE5B9E0141B58470033DA37 /* SBJSON.m in Sources */,
+				CDE5B9E1141B58470033DA37 /* SBJsonBase.m in Sources */,
+				CDE5B9E2141B58470033DA37 /* SBJsonParser.m in Sources */,
+				CDE5B9E3141B58470033DA37 /* SBJsonWriter.m in Sources */,
+				CDE5BA1F141B59480033DA37 /* CustomLabel.m in Sources */,
+				CDE5BA23141B595B0033DA37 /* AsteroidViewController.m in Sources */,
+				CDE5BA2E141B59680033DA37 /* LaserViewController.m in Sources */,
+				CDE5BA30141B59680033DA37 /* PlayerViewController.m in Sources */,
+				CDE5BA32141B59680033DA37 /* RocketViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDE5B98A141B53CA0033DA37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE5B98B141B53CA0033DA37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDE5B997141B53CA0033DA37 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE5B998141B53CA0033DA37 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CDE5B99E141B53CA0033DA37 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE5B99F141B53CA0033DA37 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		CDE5B9C4141B57640033DA37 /* BTJoypadViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE5B9C3141B57640033DA37 /* en */,
+			);
+			name = BTJoypadViewController_iPhone.xib;
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		CDE5B9C7141B57690033DA37 /* BTJoypadViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE5B9C6141B57690033DA37 /* en */,
+			);
+			name = BTJoypadViewController_iPad.xib;
+			path = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE5B9A1141B53CA0033DA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDE5B9A2141B53CA0033DA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDE5B9A4141B53CA0033DA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTJoypad/BTJoypad-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "BTJoypad/BTJoypad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDE5B9A5141B53CA0033DA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTJoypad/BTJoypad-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "BTJoypad/BTJoypad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE5B977141B53CA0033DA37 /* Build configuration list for PBXProject "BTJoypad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE5B9A1141B53CA0033DA37 /* Debug */,
+				CDE5B9A2141B53CA0033DA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE5B9A3141B53CA0033DA37 /* Build configuration list for PBXNativeTarget "BTJoypad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE5B9A4141B53CA0033DA37 /* Debug */,
+				CDE5B9A5141B53CA0033DA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE5B974141B53CA0033DA37 /* Project object */;
+}
